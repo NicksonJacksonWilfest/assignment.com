@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="media/logo.png" type="image/x-icon">
+    <link rel='stylesheet' type='text/css' href='style.css' />
+    <title>Sign Up | Form</title>
+</head>
+<body>
+<nav>
+    <div>
+        <img src="media/logo.png" height="100" alt="logo" />
+    </div>
+    <div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </div>
+</nav>
+<div>
+    <h1>Sign Up</h1>
+</div>
+<form onsubmit="return validateForm()">
+
+    <div>
+        <label>Enter your Name</label>
+        <input type="text" placeholder="James Paul" required>
+    </div>
+    <div>
+        <label>Enter your Email</label>
+        <input type="email" placeholder="turtle@example.com" required>
+    </div>
+    <div>
+        <label>Enter your Phone Number</label>
+        <input type="tel" placeholder="08012345678" required>
+    </div>
+    <div>
+        <label>Enter your password</label>
+        <input type="password" required>
+    </div>
+
+    <button type="submit">Sign Up</button>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+    <script src="script.js"></script>
+</form>
+</body>
+</html>
